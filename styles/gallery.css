@@ -1,0 +1,116 @@
+:root {
+    --li-color-container: #ffffff;
+    --color-border: #ccc;
+    --li-color-shadow: rgba(0, 0, 0, 0.1);
+    --color-text: #555;
+    --color-p-text: #888;
+    --color-time: #333;
+    --gallery-text-color: #000000;
+  
+    /* Variables para tamaños de fuente */
+    --gallery-font-size-h2: 2em;
+    --gallery-font-size-figcaption: 16px;
+    --gallery-font-size-p: 14px;
+    --gallery-font-size-time: 1em; 
+  }
+  
+  /* ===== Main ===== */
+  main {
+    padding: 20px;
+  }
+  
+  main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: var(--gallery-font-size-h2);
+    color: var(--gallery-text-color);
+  }
+  
+  /* ===== Galería de Imágenes ===== */
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #container li {
+    background-color: var(--li-color-container);
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px var(--li-color-shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  #container li:hover {
+    transform: scale(1.05);
+  }
+  
+  #container li a {
+    text-decoration: none;
+  }
+  
+  figure {
+    margin: 0;
+    text-align: center;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    font-size: var(--gallery-font-size-figcaption);
+    color: var(--color-text);
+    width: 200px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; 
+}
+
+  
+  ul > li > p {
+    text-align: center;
+    font-size: var(--gallery-font-size-p);
+    color: var(--color-p-text);
+    margin-top: 5px;
+  }
+  
+  time {
+    display: block;
+    font-weight: bold;
+    font-size: var(--gallery-font-size-time);
+    color: var(--color-time);
+  }
+  
+  a figcaption {
+    display: inline-block;
+  }
+  
+  a:hover figcaption {
+    background-size: 0 3px, 100% 3px;
+  }
+  
+    /* Responsive para galería */
+    @media (max-width: 850px) {
+      #container {
+        grid-template-columns: repeat(2, 2fr);
+      }
+    }
+
+  /* Responsive para galería */
+  @media (max-width: 480px) {
+    #container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+  

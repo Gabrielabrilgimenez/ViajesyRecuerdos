@@ -1,0 +1,133 @@
+main {
+  padding: 20px;
+}
+
+
+/* ===== Experiencia maquetada===== */
+
+
+main ul {
+  list-style-type: none;
+  padding: 0;
+  width: auto;
+  border: 2px solid black;
+  border-radius: 15px; 
+}
+
+main ul li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-radius: 10px; 
+}
+
+main ul li:last-child {
+  border-bottom: none; 
+}
+
+h2:last-child {
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  border-bottom: none; 
+}
+
+
+h3 {
+  display: block;
+  width: fit-content;
+  background-color: #dcd5d5;
+  margin-top: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+img {
+  margin-bottom: 5px;;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+a{
+  text-decoration: none;
+}
+.fila1 {
+  display: flex;
+  padding-top: 20px;
+}
+
+.zona1 {
+  flex: 3;
+  margin-right: 10%;
+
+}
+
+.zona2 {
+  flex: 9; 
+  background-color: #f0f0f0;
+
+}
+
+.zona2 p{
+  
+  border-radius: 10px;
+  margin-left: 3px;
+  margin-top: 10px;
+}
+
+/* Sección de comentarios */
+.comments-section {
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* Caja de entrada de comentarios */
+.comentarios-container {
+  width: 95%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  flex-direction: column;
+  margin: auto; 
+}
+
+
+
+/* Responsive para formulario */
+@media (max-width: 680px) {
+  .comentarios-container {
+    width: auto;
+  }
+
+  .fila1 {
+    flex-direction: column;
+  }
+}
