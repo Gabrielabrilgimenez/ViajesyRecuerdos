@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <!-- Archivo base con header, footer, aside -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Archivo específico para la galería y main -->
+    <link rel="stylesheet" href="styles/soloFoto.css" >
+    <!-- Archivo específico para la galería y main -->
+    <link rel="stylesheet" href="styles/formulario.css" >
+  <!-- WebFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+        <header>
+          <a href="index.html">
+            <img src="images/PICTURE.png" alt="" id="logo">
+          </a>
+    
+          <a href="index.html"><h1>Viajes &amp; Recuerdos</h1></a>
+          <p class="montserrat">Disfruta nuestra pagina para publicar tus experiencias favoritas</p> 
+        </header>
+    
+    
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-button">☰</label>
+    
+        <nav>
+          <ul>
+            <li><a href="index.html"><img src="images/home.png" alt="Inicio" width="20" ><span>INICIO</span> </a></li>
+            <li><a href="buscar.html"><img src="images/lupa.png" alt="Inicio" width="20"><span>BUSCAR</span></a></li>
+            <li><a href="login.html"><img src="images/login.jpeg" alt="Inicio" width="20" ><span>LOGIN</span></a></li>
+            <li><a href="index.html"><img src="images/logout.png" alt="Inicio" width="20" ><span>LOGOUT</span></a></li>
+            <li><a href="registro.html"><img src="images/user.png" alt="Inicio" width="20" ><span>REGISTRO</span></a></li>
+            <li><a href="nueva.html"><img src="images/camera.png" alt="Inicio" width="20" ><span>NUEVA EXPERIENCIA</span></a></li>
+          </ul>
+        </nav>
+    <main>
+        <div id="centrar-div">
+            <h2>Montaña Con Nubes</h2>
+        </div>
+        <div class="fila1">
+            <div class="zona1">
+              <h3>Info de la Publicación</h3>
+              <ul>
+                <li> Usuario: Usuario1</li>
+                <li>Fecha: 17 de septiembre de 2021 a las 16:30</li>
+                <li><a href="#coments">Comentarios: 200 </a></li>
+                <li> Valoración:3/5</li>
+                <li> Tiempo: 40</li>
+                <li> Categorías:<a href="buscar.html">Europa,Avion,Low Cost</a></li>
+              </ul>
+            </div>
+          
+            <div class="zona2">
+              <h3>Info de la Publicación</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, nisi. Provident doloremque totam harum placeat facilis repudiandae nemo odio dolorem, repellendus quis in assumenda doloribus ut quaerat laboriosam excepturi architecto?</p>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque aliquid officia velit quaerat ducimus sunt, ex at temporibus distinctio. Quis obcaecati labore quia excepturi! Provident quia accusantium sequi accusamus!</p>
+            </div>
+        </div>
+        
+        <div class="fila2">
+            <div class="zona3">
+              <h3>Fotos</h3>
+            <p>
+              <a href="images/viaje1.jpeg">
+                <img src="images/viaje1.jpeg" alt="Foto">
+              </a>
+            </p>
+                <button type="button" id="atras">
+                    <span class="button_top">&lt;</span>
+                </button>
+                1/5
+                <button type="button" id="siguiente">
+                    <span class="button_top">&gt;</span>
+                </button>
+            </div>
+        </div>
+
+        <h2>Comentarios X</h2>
+
+        <div class="comments-section" id="coments">
+  
+          <div class="comment">
+              <h4>Juan Pérez</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto nostrum accusantium, doloremque, iusto ipsa voluptas animi harum aut saepe pariatur dolores qui veniam neque dolorum sunt dolor, magnam veritatis.</p>
+              <p>Valoracion:5/5</p>
+              <time datetime="2025-01-16">16 de enero de 2025</time>
+          </div>
+
+          <div class="comment">
+            <h4>Juan Marcos</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur dicta facere iusto. Dicta reiciendis unde excepturi perferendis ipsum eligendi, totam ullam adipisci possimus dolores assumenda necessitatibus ad voluptatibus doloribus corrupti?</p>
+            <p>Valoracion:2/5</p>
+            <time datetime="2025-01-16">20 de enero de 2025</time>
+          </div>
+
+
+          <form id="experiencia-form">
+            <div class="comentarios-container">
+                <textarea placeholder="Escribe un comentario..." maxlength="300"></textarea>
+        
+                <label for="num_val">Valoración</label>
+                <input type="number" name="num_val" id="num_val" min="0" max="5" step="1" oninput="num_val_output.value = this.value">
+        
+                <button type="reset" id="reset_com">
+                  <span class="button_top">Limpiar</span>
+                </button>
+
+                <button type="button" id="enviar">
+                    <span class="button_top">Enviar</span>
+                </button>
+
+            </div>
+          </form>
+        </div>
+
+    </main>    
+    <footer>
+      <p>
+        &copy; 2025 Gabriel Abril Giménez | Programacion del cliente web |<a href="acerca.html">PCW</a>
+      </p>
+    </footer>
+  </body>
+</html>

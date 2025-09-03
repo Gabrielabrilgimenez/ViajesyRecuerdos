@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <!-- Archivo base con header, footer, aside -->
+    <link rel="stylesheet" href="styles/base.css" media="screen">
+    <!-- Archivo específico para los formularios -->
+    <link rel="stylesheet" href="styles/formulario.css" media="screen">
+    <!-- Archivo específico para la galería de resultados-->
+    <link rel="stylesheet" href="styles/gallery.css" media="screen">  
+     <!-- WebFonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+</head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/PICTURE.png" alt="" id="logo">
+      </a>
+
+      <a href="index.html"><h1>Viajes &amp; Recuerdos</h1></a>
+      <p class="montserrat">Disfruta nuestra pagina para publicar tus experiencias favoritas</p> 
+    </header>
+
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button">☰</label>
+
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/home.png" alt="Inicio" width="20" ><span>INICIO</span> </a></li>
+        <li><a href="buscar.html"><img src="images/lupa.png" alt="Inicio" width="20"><span>BUSCAR</span></a></li>
+        <li><a href="login.html"><img src="images/login.jpeg" alt="Inicio" width="20" ><span>LOGIN</span></a></li>
+        <li><a href="index.html"><img src="images/logout.png" alt="Inicio" width="20" ><span>LOGOUT</span></a></li>
+        <li><a href="registro.html"><img src="images/user.png" alt="Inicio" width="20" ><span>REGISTRO</span></a></li>
+        <li><a href="nueva.html"><img src="images/camera.png" alt="Inicio" width="20" ><span>NUEVA EXPERIENCIA</span></a></li>
+      </ul>
+    </nav>
+    <main>
+
+      <h2>Busca Experiencia</h2>
+      <aside>
+          <form id="search_form">
+
+              <div class="form-group">
+                  <label for="title"  class="field-left">Titulo:</label>
+                  <input type="text" class="field-left" id="title" name="title">
+              </div>
+
+              <div class="form-group">
+                  <label for="valor_inicio" class="field-right">Valoracion Desde:</label>
+                  <input type="number" class="field-right" id="valor_inicio" name="valor_inicio" min="0" max="5">
+              </div>
+
+              <div class="form-group">
+                  <label for="category" class="field-left">Categoria:</label>
+                  <select id="category" class="field-left" name="category">
+                      <option>Low Cost</option>
+                      <option>Avion</option>
+                      <option>Europa</option>
+                  </select>               
+              </div>
+
+              <div class="form-group">
+                  <label for="valor_fin" class="field-right">Valoracion Hasta:</label>
+                  <input type="number" class="field-right" id="valor_fin" name="valor_fin" min="0" max="5">
+              </div>
+
+              <div class="form-group">
+                  <label for="date_inicio" class="field-left">Fecha Desde:</label>
+                  <input type="date" class="field-left" id="date_inicio" name="date_inicio">
+              </div>
+
+              <div class="form-group">
+                  <label for="date_fin" class="field-left">Fecha Hasta:</label>
+                  <input type="date" class="field-left" id="date_fin" name="date_fin">
+              </div>
+
+              <div class="buton_center">
+                  <button type="submit" id="search">
+                      <span class="button_top">Buscar</span>
+                  </button>
+              </div>
+          </form>
+      </aside>
+
+      <h2>Resultados</h2>
+
+
+      <ul id="container">
+          <li>
+            <a href="experiencia.html">
+              <figure>
+                <img src="images/viaje1.jpeg" width="200" alt="Una montaña" title="Montaña con Nubes, mar y persona">
+                <figcaption>Montaña con Nubes, mar y persona </figcaption>
+              </figure>
+            </a>
+            <p>
+              <time datetime="2021-09-17">17 de septiembre de 2021</time> España
+            </p>
+            <p>Numero de comentarios: 200</p>
+            <p>valoracion media:3/5</p>
+          </li>
+
+          <li>
+            <a href="experiencia.html">
+              <figure>
+                <img src="images/viaje2.jpeg" width="200" alt="Un avion" title="Comenzando viaje">
+                <figcaption>Comenzando viaje</figcaption>
+              </figure>
+            </a>
+            <p>
+              <time datetime="2021-09-23">23 de septiembre de 2021</time> España
+            </p>
+            <p>Numero de comentarios: 90</p>
+            <p>valoracion media:4/5</p>
+          </li>
+        </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 Gabriel Abril Giménez | Programacion del cliente web |<a href="acerca.html">PCW</a>
+      </p>
+    </footer>
+  </body>
+</html>

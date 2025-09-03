@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <!-- Archivo base con header, footer, aside -->
+    <link rel="stylesheet" href="styles/base.css" media="screen">
+    <!-- Archivo específico para la galería y main -->
+    <link rel="stylesheet" href="styles/acerca.css" media="screen">
+     <!-- WebFonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/PICTURE.png" alt="" id="logo">
+      </a>
+
+      <a href="index.html"><h1>Viajes &amp; Recuerdos</h1></a>
+      <p class="montserrat">Disfruta nuestra pagina para publicar tus experiencias favoritas</p> 
+    </header>
+
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button">☰</label>
+
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/home.png" alt="Inicio" width="20" ><span>INICIO</span> </a></li>
+        <li><a href="buscar.html"><img src="images/lupa.png" alt="Inicio" width="20"><span>BUSCAR</span></a></li>
+        <li><a href="login.html"><img src="images/login.jpeg" alt="Inicio" width="20" ><span>LOGIN</span></a></li>
+        <li><a href="index.html"><img src="images/logout.png" alt="Inicio" width="20" ><span>LOGOUT</span></a></li>
+        <li><a href="registro.html"><img src="images/user.png" alt="Inicio" width="20" ><span>REGISTRO</span></a></li>
+        <li><a href="nueva.html"><img src="images/camera.png" alt="Inicio" width="20" ><span>NUEVA EXPERIENCIA</span></a></li>
+      </ul>
+    </nav>
+
+
+    <main>
+
+      <h2>Acerca de mi</h2>
+
+      <ul id="container">
+        <li>
+            <p>Nombre y Apellidos: Gabriel Abril Giménez</p>
+            <p>Email personal: gabrielabrilgimenez@gmail.com</p>
+            <p>Grupo de practicas: grupo 1</p>
+        </li>
+      </ul>
+
+    <div class="info">
+        <h2>¿De qué trata la práctica 1 de PCW?</h2>
+        <p>
+            Consiste en desarrollar un sitio web responsive utilizando solo HTML y CSS, sin JavaScript ni frameworks. 
+            El sitio web permitirá a los usuarios registrados publicar experiencias de viajes y comentar sobre ellas. 
+            Para ello, debemos hacer varias páginas HTML con su CSS correspondiente.
+        </p>
+        <h2>¿Informacion relativa en la practica?</h2>
+
+        <p>Todas las partes han sido implementadas con sus etiquetas HTML correspondientes para su validacion, ademas de los CSS en los que se intenta aprovechar la programacion modular</p>
+
+
+
+    </div>
+
+
+
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 Gabriel Abril Giménez | Programacion del cliente web |<a href="acerca.html">PCW</a>
+      </p>
+    </footer>
+  </body>
+</html>
